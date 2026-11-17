@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Churn | Responsible ML Project</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+    }
+    header {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+    header h1 { font-size: 34px; margin-bottom: 12px; }
+    header p { color: #d6e1f5; line-height: 1.6; }
+    main { max-width: 950px; margin: 40px auto; padding: 0 18px; }
+    .intro, .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 18px #17203312;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card h3 { margin-top: 0; }
+    .card p { color: #64748b; line-height: 1.5; }
+    a.button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 11px 16px;
+      text-decoration: none;
+      border-radius: 7px;
+      margin-top: 8px;
+    }
+    a.button:hover { background: #1d4ed8; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Customer Churn Prediction</h1>
+  <p>ML Problem Framing & Responsible Data Card</p>
+  <p>A responsible approach to evaluating machine learning
+     for real-world customer decisions.</p>
+</header>
+
+<main>
+  <section class="intro">
+    <h2>About This Project</h2>
+    <p>
+      This project explores whether machine learning is justified
+      for predicting customer churn. It documents the decision,
+      data quality, risks, evaluation metrics and non-ML baseline
+      before model training.
+    </p>
+  </section>
+
+  <h2>Project Deliverables</h2>
+
+  <div class="cards">
+    <section class="card">
+      <h3>01. Problem Framing Memo</h3>
+      <p>Decision definition, prediction target, baseline and evaluation metrics.</p>
+      <a class="button" href="01_ML_Problem_Framing_Memo.docx">View Memo</a>
+    </section>
+
+    <section class="card">
+      <h3>02. Responsible Data Card</h3>
+      <p>Data provenance, consent, privacy, missingness and leakage risks.</p>
+      <a class="button" href="02_Responsible_Data_Card.docx">View Data Card</a>
+    </section>
+
+    <section class="card">
+      <h3>03. Risk Register</h3>
+      <p>False positives, false negatives, fairness and rollback controls.</p>
+      <a class="button" href="03_Risk_Register.docx">View Risk Register</a>
+    </section>
+
+    <section class="card">
+      <h3>04. Baseline Notebook</h3>
+      <p>Python-based dataset exploration and non-ML baseline evaluation.</p>
+      <a class="button" href="04_Baseline_Notebook.ipynb">View Notebook</a>
+    </section>
+  </div>
+
+  <section class="intro" style="margin-top:25px">
+    <h2>Conclusion</h2>
+    <p>
+      The supplied dataset is too small for reliable production
+      machine learning. A transparent baseline and additional
+      responsible data validation are recommended before deployment.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>Customer Churn Prediction | Responsible ML Project</p>
+  <p>Educational Project – 2026</p>
+</footer>
+
+</body>
+</html>
